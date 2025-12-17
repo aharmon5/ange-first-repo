@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimpleSite — Minimal Static Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">SimpleSite</h1>
+      <nav>
+        <button id="theme-toggle" aria-pressed="false">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome to SimpleSite</h2>
+      <p>A lightweight example static site with a bit of interactivity.</p>
+      <div class="hero-actions">
+        <button id="hello-btn" class="btn">Say Hello</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h3>Fast</h3>
+        <p>Static HTML/CSS/JS — loads instantly.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive</h3>
+        <p>Mobile-friendly layout with simple CSS grid.</p>
+      </article>
+      <article class="card">
+        <h3>Interactive</h3>
+        <p>Small JS to handle a theme toggle and form submission.</p>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p id="form-msg" class="form-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 SimpleSite</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* SimpleSite styles */
+:root{
+  --bg: #ffffff;
+  --text: #222;
+  --accent: #0b7cff;
+  --muted: #666;
+  --card: #f7f9fc;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{margin:0;font-size:1.2rem}
+.btn{background:var(--accent);color:#fff;border:0;padding:0.6rem 1rem;border-radius:6px;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.hero{padding:2rem 0;text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:2rem}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;padding:1.5rem 0}
+.card{background:var(--card);padding:1rem;border-radius:8px;border:1px solid #eee}
+.contact{padding:1.5rem 0}
+.contact form{display:grid;gap:.5rem;max-width:520px}
+input,textarea{padding:.6rem;border-radius:6px;border:1px solid #ddd}
+.form-msg{color:green;margin-top:.5rem}
+.site-footer{border-top:1px solid #eee;padding:1rem 0;text-align:center;color:var(--muted);font-size:0.9rem}
+
+/* Dark theme */
+.dark{--bg:#0c0f14;--text:#e6eef8;--accent:#4da3ff;--muted:#99a3b6;--card:#0f1720}
+
+@media (min-width:700px){
+  .hero{padding:3rem 0}
+  .hero h2{font-size:2.5rem}
+}
