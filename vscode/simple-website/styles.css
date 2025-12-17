@@ -33,3 +33,22 @@ input,textarea{padding:.6rem;border-radius:6px;border:1px solid #ddd}
   .hero{padding:3rem 0}
   .hero h2{font-size:2.5rem}
 }
+
+/* Tabs */
+.nav-tabs{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;align-items:center}
+.nav-tabs .tab-btn{background:transparent;border:1px solid transparent;padding:.4rem .6rem;border-radius:6px;cursor:pointer}
+.nav-tabs .tab-btn.active{border-color:var(--accent);background:var(--card);color:var(--text)}
+
+/* Hidden utility */
+.hidden{display:none}
+
+/* About section */
+.about{padding:2rem 0;text-align:center}
+.about .about-content{display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:700px;margin:0 auto}
+
+/* Film reel animation */
+.film-reel{transform-origin:50% 50%;animation:spin 3s linear infinite;filter:grayscale(100%)}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* Reduce motion support */
+@media (prefers-reduced-motion: reduce){.film-reel{animation:none}}

@@ -11,12 +11,17 @@
     <div class="container">
       <h1 class="logo">SimpleSite</h1>
       <nav>
+        <ul class="nav-tabs" role="tablist">
+          <li><button class="tab-btn active" data-target="home" role="tab" aria-selected="true">Home</button></li>
+          <li><button class="tab-btn" data-target="about" role="tab" aria-selected="false">About</button></li>
+        </ul>
         <button id="theme-toggle" aria-pressed="false">Dark</button>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <div id="home">
     <section class="hero">
       <h2>Welcome to My Test Site</h2>
       <p>A lightweight example static site with a bit of interactivity.</p>
@@ -55,6 +60,32 @@
         <button type="submit" class="btn">Send</button>
       </form>
       <p id="form-msg" class="form-msg" aria-live="polite"></p>
+    </section>
+    </div><!-- /#home -->
+
+    <section id="about" class="about hidden" aria-hidden="true">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="reel" aria-hidden="true">
+          <svg width="140" height="140" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="film-reel" role="img" aria-label="Spinning film reel illustration">
+            <circle cx="50" cy="50" r="44" fill="#fff" stroke="#000" stroke-width="2"/>
+            <circle cx="50" cy="50" r="28" fill="#000" />
+            <g fill="#fff">
+              <circle cx="50" cy="20" r="6"/>
+              <circle cx="80" cy="50" r="6"/>
+              <circle cx="50" cy="80" r="6"/>
+              <circle cx="20" cy="50" r="6"/>
+            </g>
+            <g fill="#000">
+              <rect x="22" y="22" width="10" height="10" rx="1"/>
+              <rect x="68" y="22" width="10" height="10" rx="1"/>
+              <rect x="68" y="68" width="10" height="10" rx="1"/>
+              <rect x="22" y="68" width="10" height="10" rx="1"/>
+            </g>
+          </svg>
+        </div>
+        <p>Hi — I’m Ange. I like building small, focused projects and experimenting with web UI.</p>
+      </div>
     </section>
   </main>
 
