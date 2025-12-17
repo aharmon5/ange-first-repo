@@ -1,4 +1,4 @@
-# SimpleSite
+# Ange's Simple Joys and Inspirations
 
 A simple static website example (HTML, CSS, JS).
 
